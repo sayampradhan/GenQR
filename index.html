@@ -8,21 +8,58 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
         a {
             color: #1a73e8;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
+
         a:hover {
+            color: #0c4b78;
             text-decoration: underline;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>README</h1>
-    <p>Link to the GenQR WebApp: <a href="https://4chjpvmjqh2juldi7fzdky.streamlit.app/" target="_blank">https://4chjpvmjqh2juldi7fzdky.streamlit.app/</a><br></p>
-    <p>Link to the Documentation: <a href="https://sayampradhan.github.io/GenQR-documentation/" target="_blank">https://sayampradhan.github.io/GenQR-documentation/</a><br></p>
-    
+    <div>
+        <h1>REDIRECT</h1>
+        <p>Link to the GenQR WebApp: <a href="https://4chjpvmjqh2juldi7fzdky.streamlit.app/" target="_blank">https://4chjpvmjqh2juldi7fzdky.streamlit.app/</a><br></p>
+        <p>Link to the Documentation: <a href="https://sayampradhan.github.io/GenQR-documentation/" target="_blank">https://sayampradhan.github.io/GenQR-documentation/</a><br></p>
+    </div>
 </body>
 </html>
