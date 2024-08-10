@@ -19,7 +19,7 @@ from PIL import Image
 from io import BytesIO
 
 # Load favicon
-fav = Image.open("favicon.ico")
+fav = Image.open("https://github.com/sayampradhan/GenQR/blob/fc51ee237191792730c589d38feacb9e3c518ff7/favicon.ico")
 st.set_page_config(
     page_title="GenQR",
     page_icon=fav,
