@@ -18,18 +18,17 @@ from qr import genqr
 from PIL import Image
 from io import BytesIO
 
+# Load favicon
+fav = Image.open("favicon.ico")
+st.set_page_config(
+    page_title="GenQR",
+    page_icon=fav,
+)
 
 def get_image_download_link(img, filename):
     buffered = BytesIO()
     img.save(buffered, format="JPEG")
     return buffered.getvalue()
-
-fav = Image.open("favicon-16x16.png")
-st.set_page_config(
-        page_title="GenQR",
-        page_icon=fav,
-        # layout="wide",
-    )
 
 st.title(':violet[Gen]:rainbow[QR] 🌚')
 
