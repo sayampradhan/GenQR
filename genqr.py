@@ -18,6 +18,13 @@ import streamlit as st
 from qr import genqr
 from PIL import Image
 
+# Favicon and title
+st.set_page_config(
+    page_title="GenQR",
+    page_icon="💜",
+    layout="wide",
+)
+
 st.title(':violet[Gen]:rainbow[QR] 🌚')
 
 with st.form("custom-qr"):
