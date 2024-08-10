@@ -24,6 +24,11 @@ def get_image_download_link(img, filename):
     img.save(buffered, format="JPEG")
     return buffered.getvalue()
 
+st.set_page_config(
+        page_title="GenQR",
+        page_icon="👑",
+        # layout="wide",
+    )
 
 st.title(':violet[Gen]:rainbow[QR] 🌚')
 
