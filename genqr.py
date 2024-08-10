@@ -30,7 +30,7 @@ def get_image_download_link(img, filename):
     img.save(buffered, format="JPEG")
     return buffered.getvalue()
 
-st.title(':violet[Gen]:rainbow[QR] 🦄)
+st.title(':violet[Gen]:rainbow[QR] 🦄')
 
 image_placeholder = st.empty()
 download_button_placeholder = st.empty()
