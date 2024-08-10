@@ -24,7 +24,7 @@ def get_image_download_link(img, filename):
     img.save(buffered, format="JPEG")
     return buffered.getvalue()
 
-fav = Image.open("favicon.ico")
+fav = Image.open("favicon-16x16.png")
 st.set_page_config(
         page_title="GenQR",
         page_icon=fav,
