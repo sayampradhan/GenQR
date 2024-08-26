@@ -17,7 +17,6 @@ Functions:
 """
 
 import qrcode as qr
-from PIL import Image
 import io
 
 def genqr(data=None, color="black", size=10, qr_border=5, qrversion=5):
